@@ -19,12 +19,12 @@
         <Button x:Name="btnFive" Content="5" HorizontalAlignment="Center" Margin="0,193,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnFive_Click"/>
         <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="473,193,0,0" VerticalAlignment="Top" Height="40" Width="40" AutomationProperties.IsColumnHeader="True" Click="btnSix_Click"/>
         <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="275,336,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="473,336,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="473,336,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnEqual_Click"/>
         <Button x:Name="btnZero" Content="0" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnZero_Click"/>
-        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="576,262,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Margin="576,193,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="576,120,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="576,336,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="576,262,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnMinus_Click"/>
+        <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Margin="576,193,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnPlus_Click"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="576,120,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnDivide_Click"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="576,336,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnAdd_Click"/>
 
     </Grid>
 </Window>

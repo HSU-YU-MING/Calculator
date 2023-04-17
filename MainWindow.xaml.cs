@@ -25,6 +25,9 @@ namespace Calculator
             InitializeComponent();
         }
 
+        float firstNumber, secondNumber; // firstNumber 儲存第一個數字，secondNumber 儲存第二個數字
+        int operators = -1; // 記錄選擇哪一種運算符號？0:加、1:減、2:乘、3:除、-1:重新設定
+
         private void btnOne_Click(object sender, RoutedEventArgs e)
         {
             if (txtNumber.Text == "0")
@@ -93,5 +96,58 @@ namespace Calculator
         {
             txtNumber.Text = txtNumber.Text + "0";
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text); //將輸入文字框轉換成浮點數，存入第一個數字的全域變數
+            txtNumber.Text = "0"; //重新將輸入文字框重新設定為0
+            operators = 0; //選擇「加」號
+        }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 1; //選擇「減」號
+        }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 2; //選擇「乘」號
+        }
+
+        private void btnDivide_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 3; //選擇「除」號
+        }
+        
+        private void btnEqual_Click(object sender, RoutedEventArgs e)
+        {
+            float ans = 0;
+            secondNumber = Convert.ToSingle(txtNumber.Text);
+
+            if(operators == 0)
+            {
+                ans = firstNumber + secondNumber;
+            }
+            else if (operators == 1)
+            {
+                ans = firstNumber - secondNumber;
+            }
+            else if (operators == 2)
+            {
+                ans = firstNumber * secondNumber;
+            }
+            else if (operators == 3)
+            {
+                ans = firstNumber / secondNumber;
+            }
+            txtNumber.Text = ans.ToString();
+        }
+
     }
 }
