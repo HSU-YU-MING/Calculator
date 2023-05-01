@@ -152,12 +152,28 @@ namespace Calculator
                 ans = firstNumber / secondNumber;
             }
             txtNumber.Text = ans.ToString();
+            firstNumber = 0f;
+            secondNumber = 0f;
+            operators = -1;
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtNumber.Text.Length>0)
+            {
+                txtNumber.Text=txtNumber.Text.Remove(txtNumber.Text.Length-1,1);
+            }
+        }
+
+        private void btnPercentage_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             txtNumber.Text = " ";
         }
- 
+
     }
 }
