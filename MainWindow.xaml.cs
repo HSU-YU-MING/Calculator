@@ -167,7 +167,11 @@ namespace Calculator
 
         private void btnPercentage_Click(object sender, RoutedEventArgs e)
         {
-            
+            double a;
+            if (double.TryParse(txtNumber.Text, out a) == true)
+            {
+                txtNumber.Text = string.Format("{0:0.#}", a / 100);
+            }
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
