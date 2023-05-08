@@ -14,7 +14,7 @@
         <Button x:Name="btnFour" Content="4" HorizontalAlignment="Left" Margin="230,193,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnFour_Click" FontSize="24"/>
         <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="230,262,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnOne_Click" FontSize="24"/>
         <Button x:Name="btnClear" Content="清除/AC" HorizontalAlignment="Left" Margin="104,120,0,0" VerticalAlignment="Top" Height="40" Width="60" Click="btnClear_Click" FontSize="14"/>
-        <TextBox x:Name="txtNumber" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="37" HorizontalAlignment="Center" FontSize="24"/>
+        <TextBox x:Name="txtNumber" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="37" HorizontalAlignment="Center" FontSize="24" TextAlignment="Right"/>
         <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="433,120,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnNine_Click" FontSize="24"/>
         <Button x:Name="btnFive" Content="5" HorizontalAlignment="Left" Margin="340,193,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="btnFive_Click" FontSize="24"/>
         <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="433,193,0,0" VerticalAlignment="Top" Height="40" Width="40" AutomationProperties.IsColumnHeader="True" Click="btnSix_Click" FontSize="24"/>
