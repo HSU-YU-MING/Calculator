@@ -170,7 +170,7 @@ namespace Calculator
             double a;
             if (double.TryParse(txtNumber.Text, out a) == true)
             {
-                txtNumber.Text = string.Format("{0:0.0#}", a / 100);
+                txtNumber.Text = string.Format("{0:0.00}", a / 100);
             }
         }
 
